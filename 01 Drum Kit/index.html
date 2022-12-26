@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drum Kit</title>
+</head>
+<body>
+    
+<div class="keys">
+    <div data-key="65" data-midi="36" class="key">
+        <kbd>A</kbd>
+        <span class="sound">kick</span>
+    </div>
+    <div data-key="87" data-midi="37" class="key">
+        <kbd>W</kbd>
+        <span class="sound">clap</span>
+    </div>
+    <div data-key="83" data-midi="38" class="key">
+        <kbd>S</kbd>
+        <span class="sound">snare</span>
+    </div>
+    <div data-key="82" data-midi="42" class="key">
+        <kbd>R</kbd>
+        <span class="sound">hi-hat</span>
+    </div>
+    <div data-key="70" data-midi="43" class="key">
+        <kbd>F</kbd>
+        <span class="sound">tom</span>
+    </div>
+    <div data-key="84" data-midi="46" class="key">
+        <kbd>T</kbd>
+        <span class="sound">open hi-hat</span>
+    </div>
+    <div data-key="71" data-midi="45" class="key">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+    </div>
+    <div data-key="89" data-midi="51" class="key">
+        <kbd>Y</kbd>
+        <span class="sound">ride</span>
+    </div>
+    <div data-key="72" data-midi="47" class="key">
+        <kbd>H</kbd>
+        <span class="sound">tink</span>
+    </div>
+</div>
+
+<audio data-key="65" data-midi="36" src="sounds/kick.wav"></audio>
+<audio data-key="87" data-midi="37"src="sounds/clap.wav"></audio>
+<audio data-key="83" data-midi="38"src="sounds/snare.wav"></audio>
+<audio data-key="69" data-midi="39" src="sounds/snare.wav"></audio>
+<audio data-key="68" data-midi="40" src="sounds/snare.wav"></audio>
+<audio data-key="82" data-midi="42" src="sounds/hihat.wav"></audio>
+<audio data-key="70" data-midi="43" src="sounds/tom.wav"></audio>
+<audio data-key="84" data-midi="46" src="sounds/openhat.wav"></audio>
+<audio data-key="71" data-midi="45" src="sounds/boom.wav"></audio>
+<audio data-key="89" data-midi="51" src="sounds/ride.wav"></audio>
+<audio data-key="72" data-midi="47" src="sounds/tink.wav"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
