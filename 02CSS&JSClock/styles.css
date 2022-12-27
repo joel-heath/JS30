@@ -1,0 +1,70 @@
+html, body {
+    display: flex;
+    flex: 1;
+    margin: 0;
+    min-height: 100vh;
+    background: url('https://images.unsplash.com/photo-1511401139252-f158d3209c17');
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    padding: 2rem;
+    margin: 50px auto;
+    position: relative;
+    background-color: #efefef85;
+    border: 20px solid #ffffff;
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 0.4rem #0000001a,
+        inset 0 0 0 0.3rem #EFEFEF,
+        inset 0 0 1rem #000000,
+        0 0 1rem #00000033;
+    transition: all 0.5s ease;
+}
+
+.clock:hover {
+    background-color: #efefefa9;
+    border-color: #fff9e0;
+    box-shadow:
+        0 0 0 0.4rem #0000001a,
+        inset 0 0 0 0.3rem #eee8df,
+        inset 0 0 1rem #000000,
+        0 0 1rem #00000033;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-0.6rem); /* account for the height of the clock hands */
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    /*width: 50%;*/
+    height: var(--hand-height);
+    background-image: linear-gradient(to left, #000000, #1b1b1b);
+    transform-origin: 100%;
+    transition: all 0.05s cubic-bezier(0.42, 0, 0.25, 1.97);
+}
+
+.hour-hand {
+    width: 40%;
+    height: 0.7rem;
+    left: 10%;
+}
+.min-hand {
+    width: 45%;
+    height: 0.45rem;
+    left: 5%;
+}
+.sec-hand {
+    width: 50%;
+    height: 0.3rem;
+}

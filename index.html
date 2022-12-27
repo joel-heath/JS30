@@ -4,20 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>JavaScript 30</title>
+    <link rel="shortcut icon" type="image/png" href="https://javascript30.com//images/favion-JS3.png">
+    <title>JavaScript 30 — joelheath24</title>
 </head>
 <body>
+
+<header>
+    <h1><span class="highlight">#</span>JavaScript<span class="highlight">30</span></h1>
+    <h2><span class="highlight">30</span> Day Vanilla <span class="highlight">JS</span> Coding Challenge</h2>
+    <p>This site simply holds the fruits of my attempts at <a href="https://javascript30.com/">Wes Bos' JS30 challenge.</a></p>
+</header>
+
+<main>
+    <div class="card">
+        <h2><a href="01DrumKit">Day 1: Drum Kit</a></h2>
+        <p>First day and haven't done JavaScript in a long time so I was basically just following this tutorial character for character, but afterwards I did add MIDI input reading (and remap the terrible key choices).</p>
+    </div>
+    <div class="card">
+        <h2><a href="02CSS&JSClock">Day 2: CSS & JS Clock</a></h2>
+        <p>Again pretty closely following the tutorial, afterwards I added a clock ticking sound, music, and a hover effect on the clock to make it a little more interesting.</p>
+    </div>
+    <div class="card">
+        <h2><a href="03CSSVars&JS">Day 3: CSS Variables & JS</a></h2>
+        <p></p>
+    </div>
+    <div class="card">
+        <h2><a href="04ArrayCardio">Day 4: Array Cardio</a></h2>
+        <p></p>
+    </div>
+</main>
+
+<style>
+@font-face { font-family: Cascadia Code; src: url(Cascadia.ttf); } h1,h2,h3,h4,h5,h6,p,pre,a,ul,li,main,textarea{ font-family: Cascadia Code !important; }
+html {
+    background: linear-gradient(#252525, #3a3a3a) center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: #eeeeee;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Cascadia Code 'Courier New', Courier, monospace;
+}
+
+.highlight {
+    color: #ffc600;
+}
+
+a {
+    color: #ffc600;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 0 0 2px, 0 0 5px;
+    font-size: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+
+.card {
+    width: 20rem;
+    height: 15rem;
+    border: 0.2rem solid #222222;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    background-color: #2c2c2c;
+}
+
+.card:hover {
+    background-color: #3a3a3a;
+    box-shadow: .15rem .15rem .15rem #252525;
     
-<h1>JavaScript 30</h1>
-<h2>30 Day Vanilla JS Coding Challenge</h2>
-<h3>By Wes Bos</h3>
+}
 
-<p>This site simply holds the fruits of my attempts at <a href="https://javascript30.com/">Wes Bos' JS30 challenge.</a></p>
+</style>
 
-<h2><a href="/01DrumKit">Day 1: Drum Kit</a></h2>
-<p>First day and haven't done JavaScript in a long time so I was basically just following this tutorial character for character, but afterwards I did add MIDI input reading (and remap the terrible key choices).</p>
-
-<script src="script.js" type="application/javascript"></script>
+<script type="application/javascript"></script>
 </body>
 </html>
