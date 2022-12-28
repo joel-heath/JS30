@@ -1,0 +1,37 @@
+:root {
+    --base: #ffc600;
+    --spacing: 0.625rem;
+    --blur: 0.625rem;
+}
+
+body {
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 0 #000000, 0 0 10px #000000;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: 'helvetica neue', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1483239650707-6f8a45f4e7d6');
+    background-size: cover;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    box-shadow: 3px 3px 0 #000000, 0 0 10px #000000;
+}
+
+.hl {
+    color: var(--base);
+}
+
+.controls {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input {
+    width: 100px;
+}
