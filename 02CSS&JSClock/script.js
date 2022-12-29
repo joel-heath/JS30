@@ -9,13 +9,13 @@ function setDate() {
     const seconds = now.getSeconds();
     const secDegrees = seconds * 6 + 90; // == (seconds / 60) * 360 + 90
     secHand.style.transform = `rotate(${secDegrees}deg)`;
-    
+
     const minutes = now.getMinutes();
     const minDegrees = minutes * 6 + 90;
     minHand.style.transform = `rotate(${minDegrees}deg)`;
 
-    const hours = now.getHours();
-    const hourDegrees = hours * 6 + 90;
+    const hours = now.getHours() + (now.getTimezoneOffset() / 60);
+    const hourDegrees = hours * 30 + 90; // == (hours / 12) * 60 + 90
     hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 }
 
