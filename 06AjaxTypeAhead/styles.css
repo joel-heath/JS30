@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    /*font-size: 20px;*/
+    font-weight: 200;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+input {
+    width: 100%;
+    padding: 1.25rem;
+}
+  
+.search-form {
+    max-width: 25rem;
+    margin: 3.125rem auto;
+}
+  
+input.search {
+    text-align: center;
+    font-size: 2.5rem;
+    top: 1rem;
+    width: 120%;
+    left: -10%;
+    margin: 0;
+    outline: 0;
+    position: relative;
+    border: .6rem solid #F7F7F7;
+    border-radius: .3rem;
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.12), inset 0 0 .125rem rgba(0, 0, 0, 0.19);
+    z-index: 2;
+}
+  
+.suggestions {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+  
+.suggestions li {
+    background: white;
+    list-style: none;
+    border-bottom: 0.063rem solid #D8D8D8;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.14);
+    margin: 0;
+    padding: 1.25rem;
+    transition: background 0.2s;
+    display: flex;
+    justify-content: space-between;
+    transition: transform .1s ease;
+    text-transform: capitalize;
+}
+  
+.suggestions li:nth-child(even) {
+    transform: perspective(6.25rem) rotateX(3deg) translateY(.125rem) scale(1.001);
+    background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%);
+}
+.suggestions li:hover:nth-child(even) {
+    background: linear-gradient(to bottom, #f0f0f0 0%, #c0c0c0 100%);
+}
+  
+.suggestions li:nth-child(odd) {
+    transform: perspective(6.25rem) rotateX(-3deg) translateY(.188rem);
+    background: linear-gradient(to top, #ffffff 0%, #EFEFEF 100%);
+}
+.suggestions li:hover:nth-child(odd) {
+    background: linear-gradient(to top, #f0f0f0 0%, #c0c0c0 100%);
+}
+
+.suggestions li:active {
+    transform: scale(1.1);
+}
+  
+span.population {
+    font-size: 1rem;
+}
+  
+.hl {
+    background: #ffc600;
+}
