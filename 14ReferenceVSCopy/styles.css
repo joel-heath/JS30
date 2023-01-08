@@ -1,0 +1,20 @@
+body {
+    font-family: 'helvetica neue', sans-serif;
+    background-image: url('https://images.pexels.com/photos/3212662/pexels-photo-3212662.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: .2rem .2rem 0 #000000, 0 0 .6rem #000000;
+    font-size: 3.125rem;
+    font-weight: 100;
+}
