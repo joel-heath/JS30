@@ -1,0 +1,28 @@
+html {
+    color: #ffffff;
+    font-family: sans-serif;
+    background-color: #2b69ab;
+}
+
+body {
+    margin: 0;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 6.25rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+    background-color: #00000071;
+}
