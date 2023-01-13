@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="https://javascript30.com//images/favion-JS3.png">
+    <title>Unreal Webcam Fun</title>
+</head>
+<body>
+
+    <div class="photobooth">
+        <canvas class="photo"></canvas>
+        <video class="player" style="display: none"></video>
+
+
+        <div class="controls">
+            <div class="buttons">
+                <button onClick="greenScreenT = !greenScreenT">Green Screen</button>
+                <button onClick="redEffectT = !redEffectT">Red Filter</button>
+                <button onClick="greenEffectT = !greenEffectT">Green Filter</button>
+                <button onClick="blueEffectT = !blueEffectT">Blue Filter</button>
+                <button onClick="rgbSplitT = !rgbSplitT">RGB Split</button>
+                <button onClick="ctx.globalAlpha = ctx.globalAlpha === 0.1 ? 1 : 0.1">Ghost Effect</button>
+            </div>
+            <h2>Green Screen Settings</h2>
+            <div class="rgb">
+                <div class="color">
+                    <label for="rmin">Red Min:</label>
+                    <input type="range" min=0 max=255 name="rmin">
+                    <label for="rmax">Red Max:</label>
+                    <input type="range" min=0 max=255 name="rmax">
+                </div>
+                <br>
+                <div class="color">
+                    <label for="gmin">Green Min:</label>
+                    <input type="range" min=0 max=255 name="gmin">
+                    <label for="gmax">Green Max:</label>
+                    <input type="range" min=0 max=255 name="gmax">
+                </div>
+                <br>
+                <div class="color">
+                    <label for="bmin">Blue Min:</label>
+                    <input type="range" min=0 max=255 name="bmin">
+                    <label for="bmax">Blue Max:</label>
+                    <input type="range" min=0 max=255 name="bmax">
+                </div>
+            </div>
+            <div class="screenshot">
+                <img src="https://cdn-icons-png.flaticon.com/512/1924/1924096.png" onClick="takePhoto()">
+            </div>
+            
+        </div>
+        <div class="strip"></div>
+    </div>
+
+    <audio class="snap" src="./snap.mp3" hidden></audio>
+    
+    <script src="script.js" type="application/javascript"></script>
+</body>
+</html>
