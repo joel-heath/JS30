@@ -9,7 +9,23 @@
     <title>Speech Synthesis</title>
 </head>
 <body>
-    
-    <script src="script.js" type="application/javascript"></script>
+<div class="voiceinator">
+    <h1>The Voiceinator 5000</h1>
+
+    <select name="voice" id="voices" title="Select Voice">
+        <option value="">Select A Voice</option>
+    </select>
+
+    <label for="rate">Rate:</label>
+    <input name="rate" type="range" min="0" max="3" value="1" step="0.1" title="Select Speech Rate">
+
+    <label for="pitch">Pitch:</label>
+
+    <input name="pitch" type="range" min="0" max="2" step="0.1" title="Select Speech Pitch">
+    <textarea name="text" title="Enter TTS message">Hello! I love JavaScript 👍</textarea>
+    <button id="stop" type="button">Stop!</button>
+    <button id="speak" type="button">Speak</button>
+</div>
+<script src="script.js" type="application/javascript"></script>
 </body>
 </html>
