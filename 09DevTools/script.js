@@ -63,7 +63,7 @@ console.groupEnd('console.count()');
 
 // timing
 console.time('Fetching Data');
-fetch('https://api.github.com/users/joelheath24')
+fetch('https://api.github.com/users/joel-heath')
     .then(data => data.json())
     .then(data => {
         console.timeEnd('Fetching Data');
