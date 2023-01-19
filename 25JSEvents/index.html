@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="https://javascript30.com//images/favion-JS3.png">
+    <title>Event Capture, Propagation, Bubbling and Once</title>
+</head>
+<body class="bod">
+    <h1>Psst, have a look at the JavaScript Console!</h1>
+    <div class="one">
+        <div class="two">
+            <div class="three"></div>
+        </div>
+    </div>
+    <br><br>
+    
+    <fieldset>
+        Toggle Propagation
+        <label class="switch">
+            <input type="checkbox" onclick="propagate = !propagate">
+            <span class="slider round"></span>
+        </label>
+
+        Toggle Capture
+        <label class="switch">
+            <input type="checkbox" onclick="toggleCapture()">
+            <span class="slider round"></span>
+        </label>
+
+        <button id="once">YOU MAY ONLY PRESS <strong>ONCE</strong></button>
+    </fieldset>
+
+    <audio autoplay loop src="https://drive.google.com/uc?export=download&id=1SduPqgXuf5CObajTKYhS-1-6b6GZfRhd"></audio>
+    <script src="script.js" type="application/javascript"></script>
+</body>
+</html>
