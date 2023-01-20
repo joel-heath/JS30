@@ -116,6 +116,10 @@
         <h2><a href="25JSEvents/">Day 25: JS Events</a></h2>
         <p>Nothing too exciting today, it was Event Capture, Propagation, Bubbling & Once, I did make some buttons and toggles to display how it works though. Definitely important to know about.</p>
     </div>
+    <div class="card">
+        <h2><a href="26FollowDropdown/">Day 26: Hover Follow Dropdown</a></h2>
+        <p>Todays was the extension of Day 22 into something that's actually quite cool. I'd certainly like to make some changes if I were to actually use it, fading away & sliding between.</p>
+    </div>
 </main>
 
 <style>
@@ -145,16 +149,20 @@ header {
 h1 {
     color: #ffffff;
     text-shadow: 0 0 2px, 0 0 5px;
-    font-size: 6rem;
+    font-size: min(6rem, 10vw);
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+
+header h2 { font-size: min(2rem, 3.33vw); }
 
 h2 {
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 1rem;
 }
+
+
 
 main {
     display: grid;
@@ -191,6 +199,10 @@ code {
     border-radius: 5px;
     padding: 2px;
 }
+
+@media only screen and (max-width: 1480px) { main { grid-template-columns: repeat(3, 1fr); } }
+@media only screen and (max-width: 1100px) { main { grid-template-columns: repeat(2, 1fr); } }
+@media only screen and (max-width: 782px) { main { grid-template-columns: 1fr; } }
 
 </style>
 
