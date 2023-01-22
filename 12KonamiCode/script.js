@@ -1,3 +1,4 @@
+const konami = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'a', 'b'];
 const keys = [];
 const sequence = 'password'
 const music = document.querySelector('.music');
@@ -7,8 +8,8 @@ const headers = document.querySelector('main').children;
 
 window.addEventListener('keyup', (e) => {
     keys.push(e.key);
-    keys.splice(-sequence - 1, keys.length - sequence.length);
-    if (keys.join('').includes(sequence)) {
+    keys.splice(-konami - 1, keys.length - konami.length);
+    if (keys.join('').includes(sequence) || keys.length === konami.length && keys.every((v, i) => v === konami[i])) {
         solved.play();
         music.pause();
         area.classList.add('solved')
