@@ -16,6 +16,7 @@ function stopScroll(e) {
     mouseDown = false;
     const dist = (dLastX - e.clientX) * 10;
     const interval = [];
+    if (dist < 40 && dist > -40) return; // they were probably trying to get it to stop
     for (let i = 0; i < 100; i++) {
         interval.push(setTimeout(() => {
             if (mouseDown) interval.forEach(i => clearTimeout(i));
